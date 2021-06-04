@@ -1,0 +1,24 @@
+{
+  "name": "bootstrap-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "bootstrap": "^5.0.1",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/peddleon/publisher-embed-examples.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peddleon/publisher-embed-examples/issues"
+  },
+  "homepage": "https://github.com/peddleon/publisher-embed-examples#readme"
+}
