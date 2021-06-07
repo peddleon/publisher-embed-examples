@@ -63,13 +63,10 @@ PeddlePublisherEmbedConfig={target:null,publisherID:"test"},function(){if("funct
             <p>Eget diam et enim elementum feugiat sed eget velit.</p>
           </a>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
+          <div className={styles.card}>
             <h2>Peddle Embed &rarr;</h2>
             <div id="peddle-button">Get an Instant Offer</div>
-            </a>
+          </div>
         </div>
       </main>
 
