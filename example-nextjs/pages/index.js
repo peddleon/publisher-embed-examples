@@ -4,10 +4,8 @@ import React, { useEffect } from 'react';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
-
-
   useEffect(() => {
-    window.PeddlePublisherEmbed('boot', { target: '#peddle-button' });
+    window.PeddlePublisherEmbed('boot', { target: '#unique-peddle-button' });
     window.PeddlePublisherEmbed('addEventListener', {
       event: 'open',
       // eslint-disable-next-line no-console
@@ -30,7 +28,7 @@ export default function Home() {
           type="application/javascript"
           dangerouslySetInnerHTML={{
             __html: `
-PeddlePublisherEmbedConfig={target:null,publisherID:"test"},function(){if("function"!=typeof window.PeddlePublisherEmbed){if(!window.PeddlePublisherEmbedConfig||!window.PeddlePublisherEmbedConfig.publisherID)throw new Error("Unable to bootstrap Peddle Publisher Embed, make sure to set PeddlePublisherEmbedConfig.publisherID");const e=(d,i)=>{e.queue.push({operation:d,options:i})};e.queue=[],window.PeddlePublisherEmbed=e;const d=()=>{const e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://peddle-publisher-embed.onrender.com/api/v1/embed/"+window.PeddlePublisherEmbedConfig.publisherID;const d=document.getElementsByTagName("script")[0];d.parentNode.insertBefore(e,d)};window.addEventListener("load",d,!1)}}();
+PeddlePublisherEmbedConfig={publisherID:"test"},function(){if("function"!=typeof window.PeddlePublisherEmbed){if(!window.PeddlePublisherEmbedConfig||!window.PeddlePublisherEmbedConfig.publisherID)throw new Error("Unable to bootstrap Peddle Publisher Embed, make sure to set PeddlePublisherEmbedConfig.publisherID");const e=(d,i)=>{e.queue.push({operation:d,options:i})};e.queue=[],window.PeddlePublisherEmbed=e;const d=()=>{const e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://publisher-embed.peddle.com/api/v1/embed/"+window.PeddlePublisherEmbedConfig.publisherID;const d=document.getElementsByTagName("script")[0];d.parentNode.insertBefore(e,d)};window.addEventListener("load",d,!1)}}();
 `,
           }}
         />
@@ -65,7 +63,7 @@ PeddlePublisherEmbedConfig={target:null,publisherID:"test"},function(){if("funct
 
           <div className={styles.card}>
             <h2>Peddle Embed &rarr;</h2>
-            <div id="peddle-button">Get an Instant Offer</div>
+            <div id="unique-peddle-button" />
           </div>
         </div>
       </main>
