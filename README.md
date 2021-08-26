@@ -26,6 +26,15 @@ Live URL:
 
 [https://peddle-publisher-example-square.space/](https://peddle-publisher-example-square.space/)
 
+## Common usage examples
+
+See the examples under `./examples-common-usage/` that cover some frequently
+asked questions around more advanced configuration.
+
+Live URL:
+
+[https://peddle-publisher-examples-common-usage.onrender.com/](https://peddle-publisher-examples-common-usage.onrender.com/)
+
 ## Reporting a Bug
 
 Please create an issue or submit a pull request.
