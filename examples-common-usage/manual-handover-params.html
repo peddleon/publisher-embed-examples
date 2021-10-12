@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Manual Handover Params | Peddle Publisher Embed</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <script>
+      PeddlePublisherEmbedConfig = {
+        publisherID: "118535",
+        handoverParams: {
+            "gclid": "123456",
+            // "fbclid": "123456",
+            // "msclkid": "123456",
+            // "utm_campaign": "123456",
+            // "utm_term": "123456",
+            // "utm_medium": "123456",
+            // "utm_source": "123456",
+            // "utm_content": "123456",
+        }
+    },
+    function() {
+        if ("function" != typeof window.PeddlePublisherEmbed) {
+            if (!window.PeddlePublisherEmbedConfig || !window.PeddlePublisherEmbedConfig.publisherID) throw new Error("Unable to bootstrap Peddle Publisher Embed, make sure to set PeddlePublisherEmbedConfig.publisherID");
+            const e = (d, i) => {
+                e.queue.push({
+                    operation: d,
+                    options: i
+                })
+            };
+            e.queue = [], window.PeddlePublisherEmbed = e;
+            const d = () => {
+                const e = document.createElement("script");
+                e.type = "text/javascript", e.async = !0, e.src = "http://localhost:7004/api/v1/embed/" + window.PeddlePublisherEmbedConfig.publisherID;
+                const d = document.getElementsByTagName("script")[0];
+                d.parentNode.insertBefore(e, d)
+            };
+            window.addEventListener("load", d, !1)
+        }
+    }();
+    //function(){if("function"!=typeof window.PeddlePublisherEmbed){if(!window.PeddlePublisherEmbedConfig||!window.PeddlePublisherEmbedConfig.publisherID)throw new Error("Unable to bootstrap Peddle Publisher Embed, make sure to set PeddlePublisherEmbedConfig.publisherID");const e=(d,i)=>{e.queue.push({operation:d,options:i})};e.queue=[],window.PeddlePublisherEmbed=e;const d=()=>{const e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://publisher-embed.peddle.com/api/v1/embed/"+window.PeddlePublisherEmbedConfig.publisherID;const d=document.getElementsByTagName("script")[0];d.parentNode.insertBefore(e,d)};window.addEventListener("load",d,!1)}}();
+    </script>
+  </head>
+  <body>
+    <div id="peddle-button" />
+  </body>
+</html>
