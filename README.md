@@ -20,12 +20,6 @@ Live URL:
 
 [https://peddle-publisher-example-nextjs.onrender.com/](https://peddle-publisher-example-nextjs.onrender.com/)
 
-## Squarespace example
-
-Live URL:
-
-[https://peddle-publisher-example-square.space/](https://peddle-publisher-example-square.space/)
-
 ## Common usage examples
 
 See the examples under `./examples-common-usage/` that cover some frequently
