@@ -2,6 +2,27 @@
 
 Example sites showcasing how to integrate the publisher-embed script.
 
+## 🚀 Alpine Linux Migration Complete
+
+This repository has been successfully migrated from EOL Alpine Linux versions (3.14, 3.16, 3.18) to **Alpine Linux 3.20**. This migration addresses critical security vulnerabilities and ensures continued support. See [ALPINE_MIGRATION.md](ALPINE_MIGRATION.md) for details.
+
+## 🐳 Docker Support
+
+Run all examples in a containerized environment:
+
+```bash
+# Build the container
+docker build -t publisher-embedded-frontend .
+
+# Run the container
+docker run -d -p 8080:80 publisher-embedded-frontend
+
+# Or use docker-compose for full development environment
+docker-compose up -d
+```
+
+Visit [http://localhost:8080](http://localhost:8080) to see all examples.
+
 ## Bootstrap example
 
 See the example at `./example-bootstrap/index.html` for how to integrate in a

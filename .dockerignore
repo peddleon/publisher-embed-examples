@@ -1,0 +1,16 @@
+.git
+.gitignore
+README.md
+ALPINE_MIGRATION.md
+node_modules
+.next
+out
+.DS_Store
+*.log
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+coverage/
+.vscode/
+.idea/
